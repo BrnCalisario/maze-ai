@@ -1,5 +1,4 @@
-using System.Collections.Generic;
-using Stately;
+using Search;
 
 public class Solver
 {
@@ -7,6 +6,10 @@ public class Solver
     
     public void Solve()
     {
-        
+        // var dfs = new DepthFirstSearch();
+        // dfs.Solve(Maze);
+
+        var bfs = new BreadthFirstSearch();
+        bfs.Solve(Maze);
     }
 }
